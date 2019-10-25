@@ -1,0 +1,14 @@
+bool Sq_Insert(SqList &L,int i,ElemType e){
+	if(i<1||i>L.length+1)
+		return false;
+	if(L.length>=Maxsize)
+		return false;
+	int j;
+	for(j = L.length;j>=i;j--){	
+		L.data[j] = L.data[j-1];
+	}
+	L.data[i]=e;
+	L.length++;
+	return true;
+
+}
