@@ -7,7 +7,7 @@ struct Qnode{
 	int front;
 	int rear;
 	ElemType *data;
-	int length
+	int length;
 };
 typedef struct Qnode * Queue;
 
@@ -41,7 +41,7 @@ int main(){
 Queue CreatQueue(int length){
 	Queue q;
 	q = (Queue)malloc(sizeof(strut Qnode));
-	q->data = (ElemType*)malloc(sizeof(length*ElemType))
+	q->data = (ElemType*)malloc(sizeof(length*ElemType));
 	q->front=0;
 	q->rear=0;
 	q->length = length;
@@ -59,7 +59,7 @@ bool IsFullQ(Queue q,int length){
 }
 void AddQ(Queue q,ElemType item){
 	if(IsFullQ(q)){
-		printf("队列已满");
+		printf("露脫脕脨脪脩脗煤");
 		exit();
 
 	}
@@ -77,7 +77,7 @@ bool IsEmptyQ(Queue q){
 }
 ElemType DeletQ(Queue q){
 	if(IsEmpty(q)){
-		printf("队列空");
+		printf("露脫脕脨驴脮");
 		exit();
 	}
 	ElemType deletItem=q->data[q->front];
